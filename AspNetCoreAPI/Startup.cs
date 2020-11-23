@@ -1,3 +1,11 @@
+/**
+ * 
+ * AspNetCore API Template
+ * (C) 2020 Alessio Saltarin
+ * MIT LICENSE
+ * 
+ **/
+
 using AspNetCoreAPI.Config;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

@@ -1,10 +1,19 @@
-﻿using AspNetCoreAPI.Models;
+﻿/**
+ * 
+ * AspNetCore API Template
+ * (C) 2020 Alessio Saltarin
+ * MIT LICENSE
+ * 
+ **/
+
+using AspNetCoreAPI.Models;
 using AspNetCoreAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace AspNetCoreAPI.Controllers
 {
@@ -22,22 +31,44 @@ namespace AspNetCoreAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Person> Get()
+        public ActionResult<IEnumerable<Person>> Get()
         {
-            return this.service.GetAll().AsEnumerable<Person>();
+            var result = this.service.GetAll();
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
+
+                    
+
+        [HttpGet("count")]
+        public ActionResult<long> Size()
+        {
+            return Ok(this.service.Size());
         }
 
         [HttpGet("bySerialNumber")]
-        public Person GetBySerial([FromQuery] string serialNumber)
+        public ActionResult<Person> GetBySerial([FromQuery] string serialNumber)
         {
-            return this.service.GetPerson(serialNumber);
+            var person =  this.service.GetPerson(serialNumber);
+            if (person == null)
+            {
+                return NotFound();
+            }
+            return Ok(person);
         }
 
         [HttpPost]
-        public string Create(Person person)
+        public ActionResult<string> Create(Person person)
         {
             var createdPerson = this.service.AddPerson(person);
-            return createdPerson.SerialNumber;
+            if (createdPerson == null)
+            {
+                return BadRequest();
+            }
+            return Ok(createdPerson.SerialNumber);
         }
 
 
