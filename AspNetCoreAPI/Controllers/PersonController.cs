@@ -1,18 +1,15 @@
-﻿/**
- * 
+﻿/*
  * AspNetCore API Template
  * (C) 2020 Alessio Saltarin
  * MIT LICENSE
  * 
- **/
+ */
 
+using System.Collections.Generic;
 using AspNetCoreAPI.Models;
 using AspNetCoreAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace AspNetCoreAPI.Controllers
 {
@@ -20,7 +17,7 @@ namespace AspNetCoreAPI.Controllers
     [Route("api/[controller]")]
     public class PersonController : ControllerBase
     {
-        private readonly Services.PersonService _service;
+        private readonly PersonService _service;
         private readonly ILogger<PersonController> _logger;
 
         public PersonController(ILogger<PersonController> logger)
