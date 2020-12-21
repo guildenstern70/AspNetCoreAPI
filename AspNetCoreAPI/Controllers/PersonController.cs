@@ -17,19 +17,20 @@ namespace AspNetCoreAPI.Controllers
     [Route("api/[controller]")]
     public class PersonController : ControllerBase
     {
-        private readonly PersonService _service;
+        private readonly IPersonService _personService;
         private readonly ILogger<PersonController> _logger;
 
-        public PersonController(ILogger<PersonController> logger)
+        public PersonController(ILogger<PersonController> logger,
+                               IPersonService personService)
         {
             this._logger = logger;
-            this._service = new PersonService();
+            this._personService = personService;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<Person>> Get()
         {
-            var result = this._service.GetAll();
+            var result = this._personService.GetAll();
             if (result == null)
             {
                 return NotFound();
@@ -42,13 +43,13 @@ namespace AspNetCoreAPI.Controllers
         [HttpGet("count")]
         public ActionResult<long> Size()
         {
-            return Ok(this._service.Size());
+            return Ok(this._personService.Size());
         }
 
-        [HttpGet("bySerialNumber")]
-        public ActionResult<Person> GetBySerial([FromQuery] string serialNumber)
+        [HttpGet("byId")]
+        public ActionResult<Person> GetBySerial([FromQuery] int id)
         {
-            var person =  this._service.GetPerson(serialNumber);
+            var person =  this._personService.GetPerson(id);
             if (person == null)
             {
                 return NotFound();
@@ -59,7 +60,7 @@ namespace AspNetCoreAPI.Controllers
         [HttpPost]
         public ActionResult<string> Create(Person person)
         {
-            var createdPerson = this._service.AddPerson(person);
+            var createdPerson = this._personService.AddPerson(person);
             if (createdPerson == null)
             {
                 return BadRequest();
