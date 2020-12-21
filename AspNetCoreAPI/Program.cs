@@ -1,10 +1,16 @@
-using System.Diagnostics.CodeAnalysis;
+/**
+ * 
+ * AspNetCore API Template
+ * (C) 2020 Alessio Saltarin
+ * MIT LICENSE
+ * 
+ **/
+
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
 namespace AspNetCoreAPI
 {
-    [SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
     public class Program
     {
         public static void Main(string[] args)
