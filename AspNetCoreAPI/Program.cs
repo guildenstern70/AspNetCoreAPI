@@ -1,8 +1,10 @@
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
 namespace AspNetCoreAPI
 {
+    [SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
     public class Program
     {
         public static void Main(string[] args)
@@ -10,7 +12,7 @@ namespace AspNetCoreAPI
             CreateHostBuilder(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
+        private static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
