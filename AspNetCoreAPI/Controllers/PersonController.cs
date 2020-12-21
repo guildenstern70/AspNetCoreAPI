@@ -32,7 +32,7 @@ namespace AspNetCoreAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Person>> Get()
         {
-            var result = this.service.GetAll();
+            var result = this._service.GetAll();
             if (result == null)
             {
                 return NotFound();
@@ -45,13 +45,13 @@ namespace AspNetCoreAPI.Controllers
         [HttpGet("count")]
         public ActionResult<long> Size()
         {
-            return Ok(this.service.Size());
+            return Ok(this._service.Size());
         }
 
         [HttpGet("bySerialNumber")]
         public ActionResult<Person> GetBySerial([FromQuery] string serialNumber)
         {
-            var person =  this.service.GetPerson(serialNumber);
+            var person =  this._service.GetPerson(serialNumber);
             if (person == null)
             {
                 return NotFound();
@@ -62,7 +62,7 @@ namespace AspNetCoreAPI.Controllers
         [HttpPost]
         public ActionResult<string> Create(Person person)
         {
-            var createdPerson = this.service.AddPerson(person);
+            var createdPerson = this._service.AddPerson(person);
             if (createdPerson == null)
             {
                 return BadRequest();
