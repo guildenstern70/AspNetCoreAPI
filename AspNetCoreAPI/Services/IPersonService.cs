@@ -1,3 +1,11 @@
+/*
+ * 
+ * AspNetCore API Template
+ * (C) 2020 Alessio Saltarin
+ * MIT LICENSE
+ * 
+ */
+
 using System.Collections.Generic;
 using AspNetCoreAPI.Models;
 
