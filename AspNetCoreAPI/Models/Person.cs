@@ -1,24 +1,20 @@
-﻿/**
+﻿/*
  * 
  * AspNetCore API Template
  * (C) 2020 Alessio Saltarin
  * MIT LICENSE
  * 
- **/
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+ */
 
 namespace AspNetCoreAPI.Models
 {
     public class Person
     {
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public int Age { get; set; }
-        public string SerialNumber { get; set; }
+        public int PersonId { get; set; }
+        public string Name { get; init; }
+        public string Surname { get; init; }
+        public int Age { get; init; }
+        public string SerialNumber { get; init; }
 
     }
 }

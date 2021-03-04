@@ -1,19 +1,15 @@
-﻿/**
- * 
+﻿/*
  * AspNetCore API Template
  * (C) 2020 Alessio Saltarin
  * MIT LICENSE
  * 
- **/
+ */
 
+using System.Collections.Generic;
 using AspNetCoreAPI.Models;
 using AspNetCoreAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AspNetCoreAPI.Controllers
 {
@@ -21,19 +17,20 @@ namespace AspNetCoreAPI.Controllers
     [Route("api/[controller]")]
     public class PersonController : ControllerBase
     {
-        private Services.PersonService service;
+        private readonly IPersonService _personService;
         private readonly ILogger<PersonController> _logger;
 
-        public PersonController(ILogger<PersonController> logger)
+        public PersonController(ILogger<PersonController> logger,
+                               IPersonService personService)
         {
             this._logger = logger;
-            this.service = new PersonService();
+            this._personService = personService;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<Person>> Get()
         {
-            var result = this.service.GetAll();
+            var result = this._personService.GetAll();
             if (result == null)
             {
                 return NotFound();
@@ -46,13 +43,13 @@ namespace AspNetCoreAPI.Controllers
         [HttpGet("count")]
         public ActionResult<long> Size()
         {
-            return Ok(this.service.Size());
+            return Ok(this._personService.Size());
         }
 
-        [HttpGet("bySerialNumber")]
-        public ActionResult<Person> GetBySerial([FromQuery] string serialNumber)
+        [HttpGet("byId")]
+        public ActionResult<Person> GetBySerial([FromQuery] int id)
         {
-            var person =  this.service.GetPerson(serialNumber);
+            var person =  this._personService.GetPerson(id);
             if (person == null)
             {
                 return NotFound();
@@ -63,7 +60,7 @@ namespace AspNetCoreAPI.Controllers
         [HttpPost]
         public ActionResult<string> Create(Person person)
         {
-            var createdPerson = this.service.AddPerson(person);
+            var createdPerson = this._personService.AddPerson(person);
             if (createdPerson == null)
             {
                 return BadRequest();
