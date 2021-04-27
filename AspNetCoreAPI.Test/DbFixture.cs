@@ -6,16 +6,20 @@ namespace AspNetCoreAPI.Test
 {
     public class DbFixture
     {
+        private DbContextOptions<PersonContext> _contextOptions;
+        
         public DbFixture()
         {
-            var serviceCollection = new ServiceCollection();
-            serviceCollection
-                .AddDbContext<PersonContext>(options =>
-                    options.UseSqlite("Data Source=aspnetcoreapi.db"));
-
-            ServiceProvider = serviceCollection.BuildServiceProvider();
+            this._contextOptions = new DbContextOptionsBuilder<PersonContext>()
+                .UseSqlite("Data Source=aspnetcoreapi.db")
+                .Options;
         }
-
-        public ServiceProvider ServiceProvider { get; private set; }
+        
+        public void Initialize()
+        {
+            var db = new PersonContext(this._contextOptions);
+            db.Database.EnsureDeleted();
+            db.Database.EnsureCreated();
+        }
     }
 }

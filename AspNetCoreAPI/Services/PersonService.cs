@@ -23,7 +23,9 @@ namespace AspNetCoreAPI.Services
         {
             this._logger = logger;
             this._personContext = personContext;
+            this._logger.LogInformation("Before Initialize...");
             this.Initialize();
+            this._logger.LogInformation("After Initialize...");
         }
 
         public List<Person> GetAll()
@@ -50,6 +52,7 @@ namespace AspNetCoreAPI.Services
 
         private void Initialize()
         {
+            this._logger.LogInformation("Initialize...");
             if (!this._personContext.Persons.Any())
             {
                 this._logger.LogInformation("Initializing database...");
@@ -64,6 +67,7 @@ namespace AspNetCoreAPI.Services
             {
                 this._logger.LogInformation("Database already populated");
             }
+            this._logger.LogInformation("Initialize DONE");
         }
 
     }

@@ -1,32 +1,50 @@
 using System;
 using AspNetCoreAPI.Models;
 using AspNetCoreAPI.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace AspNetCoreAPI.Test
 {
     public class ServiceTest
     {
-        private readonly ServiceProvider _serviceProvider;
+        private readonly IPersonService _personService;
+        private readonly ITestOutputHelper output;
 
-        public ServiceTest()
+        public ServiceTest(ITestOutputHelper output)
         {
-            var dbFixture = new DbFixture();
-            this._serviceProvider = dbFixture.ServiceProvider;
+            this.output = output;
+            
+            // Drop and Create Database
+            new DbFixture().Initialize();
+            
+            this.output.WriteLine("Building services...");
+            
+            // Build services
+            var services = new ServiceCollection()
+                .AddDbContext<PersonContext>(options =>
+                    options.UseSqlite("Data Source=aspnetcoreapi.db"))
+                .AddLogging()
+                .AddSingleton<IPersonService, PersonService>();  
+            this.output.WriteLine("Building services DONE");
+            
+            // Get Persons Service
+            this.output.WriteLine("Getting Person Service...");
+            this._personService = services
+                .BuildServiceProvider()
+                .GetService<IPersonService>();
+            this.output.WriteLine("Getting Person Service DONE");
         }
         
         [Fact]
         public void ListPersonsTest()
         {
-            var context = this._serviceProvider.GetService<PersonContext>();
-            Assert.NotNull(context);
-            var personService = new PersonService(null, context);
-            Assert.NotNull(personService);
-            var persons = personService.GetAll();
-            Assert.Equal(5, persons.Count);
-            context.Dispose();
+            Assert.NotNull(_personService);
+            var persons = _personService.GetAll();
+            Assert.Equal(4, persons.Count);
         }
     }
 }
