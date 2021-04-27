@@ -1,7 +1,7 @@
 ﻿/*
  * 
  * AspNetCore API Template
- * (C) 2020 Alessio Saltarin
+ * (C) 2020-21 Alessio Saltarin
  * MIT LICENSE
  * 
  */
@@ -58,7 +58,7 @@ namespace AspNetCoreAPI.Services
                 this._personContext.Add(new Person { Name = "Giovanni", Surname = "Rossi", Age = 43, SerialNumber = "3" });
                 this._personContext.Add(new Person { Name = "Mauro", Surname = "Sangiovanni", Age = 21, SerialNumber = "4" });
                 this._personContext.SaveChanges();
-                this._logger.LogInformation("Done.");
+                this._logger.LogInformation("Done");
             }
         }
 

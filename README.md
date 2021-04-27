@@ -1,6 +1,6 @@
 ## ASP.NET Core Open API Template
 
-A basic Asp.NET Core v5 OpenAPI template.
+A basic Asp.NET Core v5 OpenAPI template. It uses an embedded SQLite database for data persistence.
 
 #### Build Docker image
 
