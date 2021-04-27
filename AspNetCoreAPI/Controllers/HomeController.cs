@@ -6,14 +6,23 @@
  */
 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace AspNetCoreAPI.Controllers
 {
     [Route("/")]
     public class HomeController : Controller
     {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            this._logger = logger;
+        }
+        
         public IActionResult Index()
         {
+            this._logger.LogInformation("GET /");
             return View();
         }
     }

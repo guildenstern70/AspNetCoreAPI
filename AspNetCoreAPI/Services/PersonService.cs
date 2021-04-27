@@ -60,6 +60,10 @@ namespace AspNetCoreAPI.Services
                 this._personContext.SaveChanges();
                 this._logger.LogInformation("Done");
             }
+            else
+            {
+                this._logger.LogInformation("Database already populated");
+            }
         }
 
     }
