@@ -14,7 +14,9 @@ namespace AspNetCoreAPI.Config
         public void Apply(ActionModel action)
         {
             if (action.Controller.ControllerName.Equals("Home"))
+            {
                 action.ApiExplorer.IsVisible = false;
+            }
         }
     }
 

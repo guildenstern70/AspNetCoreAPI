@@ -12,6 +12,7 @@ namespace AspNetCoreAPI.Test
     public class ServiceTest
     {
         private readonly IPersonService _personService;
+        // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
         private readonly ITestOutputHelper output;
 
         public ServiceTest(ITestOutputHelper output)

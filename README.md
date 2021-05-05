@@ -2,7 +2,7 @@
 
 A basic Asp.NET Core v5 OpenAPI template. It uses an embedded SQLite database for data persistence.
 
-#### Build Docker image
+### Build Docker image
 
 Build
 
@@ -13,7 +13,7 @@ Run
     docker run -p 5000:5000 guildenstern70/aspnetcoreapi:1.0
 
 
-#### Entity Framework Core setup
+### Entity Framework Core setup
 
 Read all about Entity Framework core here:
 https://docs.microsoft.com/it-it/ef/core/get-started/overview/first-app?tabs=netcore-cli
@@ -25,7 +25,7 @@ If you need to update the Entity Framework core:
 
     dotnet tool update --global dotnet-ef
 
-#### DB Migrations
+### DB Migrations
 
     cd AspNetCoreAPI
     dotnet ef migrations add InitialCreate

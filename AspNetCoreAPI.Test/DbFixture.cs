@@ -6,7 +6,7 @@ namespace AspNetCoreAPI.Test
 {
     public class DbFixture
     {
-        private DbContextOptions<PersonContext> _contextOptions;
+        private readonly DbContextOptions<PersonContext> _contextOptions;
         
         public DbFixture()
         {
