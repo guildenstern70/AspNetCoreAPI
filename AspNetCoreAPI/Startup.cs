@@ -42,6 +42,9 @@ namespace AspNetCoreAPI
             
             // Services Dependency injection
             services.AddScoped<IPersonService, PersonService>();  
+            
+            // Routing is lowercase
+            services.AddRouting(options => options.LowercaseUrls = true);
 
             // Swagger
             services.AddSwaggerGen(c =>

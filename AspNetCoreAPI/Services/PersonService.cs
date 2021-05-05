@@ -40,6 +40,13 @@ namespace AspNetCoreAPI.Services
             return p;
         }
 
+        public void DeletePerson(int id)
+        {
+            var person = this._personContext.Persons.Find(id);
+            this._personContext.Remove(person);
+            this._personContext.SaveChanges();
+        }
+
         public long Size()
         {
             return this._personContext.Persons.Count();

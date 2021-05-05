@@ -32,7 +32,7 @@ namespace AspNetCoreAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Person>> Get()
         {
-            _logger.LogInformation("GET api/Person");
+            _logger.LogInformation("GET api/person");
             var result = this._personService.GetAll();
             if (result == null)
             {
@@ -48,16 +48,24 @@ namespace AspNetCoreAPI.Controllers
             return Ok(this._personService.Size());
         }
 
-        [HttpGet("byId")]
-        public ActionResult<Person> GetBySerial([FromQuery] int id)
+        [HttpGet("{id:int}")]
+        public ActionResult<Person> GetBySerial(int id)
         {
-            _logger.LogInformation("GET api/byId/{Id}", id);
+            _logger.LogInformation("GET api/person/{Id}", id);
             var person =  this._personService.GetPerson(id);
             if (person == null)
             {
                 return NotFound();
             }
             return Ok(person);
+        }
+
+        [HttpDelete("{id:int}")]
+        public ActionResult DeleteById(int id)
+        {
+            _logger.LogInformation("DELETE api/persona/{Id}", id);
+            this._personService.DeletePerson(id);
+            return Ok();
         }
 
         [HttpPost]

@@ -21,6 +21,10 @@ https://docs.microsoft.com/it-it/ef/core/get-started/overview/first-app?tabs=net
     dotnet tool install --global dotnet-ef
     dotnet add package Microsoft.EntityFrameworkCore.Design
 
+If you need to update the Entity Framework core:
+
+    dotnet tool update --global dotnet-ef
+
 #### DB Migrations
 
     cd AspNetCoreAPI

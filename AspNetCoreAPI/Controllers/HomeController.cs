@@ -23,6 +23,8 @@ namespace AspNetCoreAPI.Controllers
         public IActionResult Index()
         {
             this._logger.LogInformation("GET /");
+            ViewData["Title"] = "Asp.Net Core API Template";
+            ViewData["Version"] = "0.2.0";
             return View();
         }
     }

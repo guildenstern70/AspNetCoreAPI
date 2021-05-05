@@ -17,5 +17,6 @@ namespace AspNetCoreAPI.Services
         Person AddPerson(Person p);
         long Size();
         Person GetPerson(int id);
+        void DeletePerson(int id);
     }
 }
