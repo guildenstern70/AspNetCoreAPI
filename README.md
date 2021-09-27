@@ -15,7 +15,6 @@ Run
 
     docker run -p 5000:5000 guildenstern70/aspnetcoreapi:1.0
 
-
 ### Entity Framework Core setup
 
 Read all about Entity Framework core here:
