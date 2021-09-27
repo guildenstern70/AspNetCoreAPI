@@ -13,16 +13,16 @@ namespace AspNetCoreAPI.Test
     {
         private readonly IPersonService _personService;
         // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
-        private readonly ITestOutputHelper output;
+        private readonly ITestOutputHelper _output;
 
         public ServiceTest(ITestOutputHelper output)
         {
-            this.output = output;
+            this._output = output;
             
             // Drop and Create Database
             new DbFixture().Initialize();
             
-            this.output.WriteLine("Building services...");
+            this._output.WriteLine("Building services...");
             
             // Build services
             var services = new ServiceCollection()
@@ -30,14 +30,14 @@ namespace AspNetCoreAPI.Test
                     options.UseSqlite("Data Source=aspnetcoreapi.db"))
                 .AddLogging()
                 .AddSingleton<IPersonService, PersonService>();  
-            this.output.WriteLine("Building services DONE");
+            this._output.WriteLine("Building services DONE");
             
             // Get Persons Service
-            this.output.WriteLine("Getting Person Service...");
+            this._output.WriteLine("Getting Person Service...");
             this._personService = services
                 .BuildServiceProvider()
                 .GetService<IPersonService>();
-            this.output.WriteLine("Getting Person Service DONE");
+            this._output.WriteLine("Getting Person Service DONE");
         }
         
         [Fact]
