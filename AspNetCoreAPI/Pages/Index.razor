@@ -1,0 +1,45 @@
+@*
+  AspNetCore API Template
+  (C) 2020-23 Alessio Saltarin
+  MIT LICENSE
+ **@
+
+@page "/"
+
+<PageTitle>AspNetCore API</PageTitle>
+
+<div class="row">
+    <div class="col-sd-1 col-md-2">
+        &nbsp;
+    </div>
+    <div class="col-sd-10 col-md-8">
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6">
+                &nbsp;
+            </div>
+            <div class="col-md-6">
+                &nbsp;
+            </div>
+        </div>
+        <div class="p-5 bg-light border rounded-3">
+            <h2 class="text-primary">AspNetCore API</h2>
+            <p class="versions">A sample OpenAPI template in ASP.NET Core v7 using .NET Core v7</p>
+            <div class="pt-3 mt-4 mb-5">
+                <a href="/swagger" class="btn btn-primary">Documentation</a>
+                <a href="#" target="_blank" class="btn btn-outline-secondary">Info</a>
+            </div>
+            <p><small>
+                <span class="text-secondary">AspNetCore API <span class="text-primary"> v.@Version</span></span>
+            </small></p>
+        </div>
+    </div>
+    <div class="col-sd-1 col-md-2">
+        &nbsp;
+    </div>
+</div>
+
+@code {
+
+    const string Version = "0.0.1";
+
+}

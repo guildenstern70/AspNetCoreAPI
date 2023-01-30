@@ -1,81 +1,55 @@
-﻿/*
+/*
  * 
  * AspNetCore API Template
- * (C) 2020-21 Alessio Saltarin
- * MIT LICENSE
+ * Copyright (C) 2020-23 Alessio Saltarin
+ * MIT License - see LICENSE file
  * 
  */
 
-using System.Collections.Generic;
-using System.Linq;
-using AspNetCoreAPI.Models;
-using Microsoft.Extensions.Logging;
+using AspNetCoreApi.Models;
 
-namespace AspNetCoreAPI.Services
+namespace AspNetCoreApi.Services;
+
+public class PersonService: IPersonService
 {
-    public class PersonService: IPersonService
-    {
         private readonly ILogger<PersonService> _logger;
-        private readonly PersonContext _personContext;
+        private readonly DataContext _dbContext;
         
         public PersonService(ILogger<PersonService> logger,
-                             PersonContext personContext)
+            DataContext dbContext)
         {
             this._logger = logger;
-            this._personContext = personContext;
-            this._logger.LogInformation("Before Initialize...");
-            this.Initialize();
-            this._logger.LogInformation("After Initialize...");
+            this._dbContext = dbContext;
         }
 
         public List<Person> GetAll()
         {
-            return this._personContext.Persons.ToList();
+            return this._dbContext.Persons.ToList();
         }
 
         public Person AddPerson(Person p)
         {
-            this._personContext.Add(p);
-            this._personContext.SaveChanges();
+            this._dbContext.Add(p);
+            this._dbContext.SaveChanges();
             return p;
         }
 
         public void DeletePerson(int id)
         {
-            var person = this._personContext.Persons.Find(id);
-            this._personContext.Remove(person);
-            this._personContext.SaveChanges();
+            Person? person = this._dbContext.Persons.Find(id);
+            if (person == null) return;
+            this._dbContext.Remove(person);
+            this._dbContext.SaveChanges();
         }
 
         public long Size()
         {
-            return this._personContext.Persons.Count();
+            return this._dbContext.Persons.Count();
         }
 
-        public Person GetPerson(int id)
+        public Person? GetPerson(int id)
         {
-            return this._personContext.Persons.Find(id);
+            return this._dbContext.Persons.Find(id);
         }
 
-        private void Initialize()
-        {
-            this._logger.LogInformation("Initialize...");
-            if (!this._personContext.Persons.Any())
-            {
-                this._logger.LogInformation("Initializing database...");
-                this._personContext.Add(new Person { Name = "Alessio", Surname = "Saltarin", Age = 47, SerialNumber = "1" });
-                this._personContext.Add(new Person { Name = "Elena", Surname = "Zambrelli", Age = 27, SerialNumber = "2" });
-                this._personContext.Add(new Person { Name = "Giovanni", Surname = "Rossi", Age = 43, SerialNumber = "3" });
-                this._personContext.Add(new Person { Name = "Mauro", Surname = "Sangiovanni", Age = 21, SerialNumber = "4" });
-                this._personContext.SaveChanges();
-                this._logger.LogInformation("Done");
-            }
-            else
-            {
-                this._logger.LogInformation("Database already populated");
-            }
-            this._logger.LogInformation("Initialize DONE");
-        }
-
-    }
 }
