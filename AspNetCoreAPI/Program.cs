@@ -26,6 +26,9 @@ builder.Services.AddScoped<IPersonService, PersonService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Health check
+builder.Services.AddHealthChecks();
+
 // Logging
 builder.Logging.ClearProviders();
 builder.Logging.AddSimpleConsole(options =>
@@ -42,7 +45,7 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlite("Data Source=aspnetcoreapi.db"));
 
-WebApplication app = builder.Build();
+var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI(c =>
@@ -55,6 +58,7 @@ app.UseRouting();
 // Endpoints
 app.MapControllers();
 app.MapBlazorHub();
+app.MapHealthChecks("/health");
 app.MapFallbackToPage("/_Host");
 
 app.Run();
