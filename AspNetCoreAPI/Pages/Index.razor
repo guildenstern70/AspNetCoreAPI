@@ -5,6 +5,8 @@
  **@
 
 @page "/"
+@using System.Runtime.InteropServices
+@using System.Reflection
 
 <PageTitle>AspNetCore API</PageTitle>
 
@@ -29,7 +31,10 @@
                 <a href="/health" target="_blank" class="btn btn-outline-secondary">Health</a>
             </div>
             <p><small>
-                <span class="text-secondary">AspNetCore API <span class="text-primary"> v.@Version</span></span>
+                <span class="text-secondary">AspNetCore API <span class="text-primary"> v.@_version</span>
+                </span>
+                &nbsp;|&nbsp;
+                <span>Platform <span class="text-primary">@_sdkVersion</span></span>
             </small></p>
         </div>
     </div>
@@ -39,7 +44,17 @@
 </div>
 
 @code {
+    
+    private string? _version;
+    private string? _sdkVersion;
 
-    const string Version = "0.0.1";
+    protected override void OnInitialized()
+    {
+        var versionInfo = Assembly.GetEntryAssembly()?.GetName().Version;
+        this._version = versionInfo != null ? versionInfo.ToString() : "?";
+        this._sdkVersion = RuntimeInformation.FrameworkDescription;
+    }
+
+
 
 }
