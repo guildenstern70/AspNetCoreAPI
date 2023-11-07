@@ -32,3 +32,14 @@ If you need to update the Entity Framework core:
     cd AspNetCoreAPI
     dotnet ef migrations add InitialCreate
     dotnet ef database update
+
+### Unit Tests
+
+    dotnet test
+
+Please note that the tests rely on a different database which contains only test data. 
+The database is for tests is found in the AspNetCoreApi.Test project directory.
+To re-create the test database, simply re-run DB migrations and copy DB file ('aspnetcoreapi.db') to the test project directory.
+
+
+

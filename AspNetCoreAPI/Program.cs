@@ -10,7 +10,7 @@ using AspNetCoreApi.Models;
 using AspNetCoreApi.Services;
 using Microsoft.EntityFrameworkCore;
 
-WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
 // Home Page
 builder.Services.AddRazorPages();
@@ -62,4 +62,6 @@ app.MapHealthChecks("/health");
 app.MapFallbackToPage("/_Host");
 
 app.Run();
+
+public partial class Program { }
 

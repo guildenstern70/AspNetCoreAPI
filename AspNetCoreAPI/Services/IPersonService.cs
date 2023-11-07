@@ -12,9 +12,10 @@ namespace AspNetCoreApi.Services;
 
 public interface IPersonService
 {
-      List<Person> GetAll();
-      Person AddPerson(Person p);
-      long Size();
-      Person? GetPerson(int id);
-      void DeletePerson(int id);
+      Task<List<Person>> GetAll();
+      Task<Person> AddPerson(Person p);
+      Task<Person?> EditPerson(Person p);
+      Task<int> Size();
+      Task<Person?> GetPerson(int id);
+      Task DeletePerson(int id);
 }

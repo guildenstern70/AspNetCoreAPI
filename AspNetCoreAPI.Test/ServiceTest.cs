@@ -9,41 +9,45 @@
 using AspNetCoreApi.Models;
 using AspNetCoreApi.Services;
 using FluentAssertions;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 using Xunit.Abstractions;
 
 namespace AspNetCoreApi.Test;
 
-public class ServiceTest
+public class ServiceTest: IClassFixture<WebApplicationFactory<Program>>
 {
-    private readonly IPersonService _personService;
-    
-    // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
     private readonly ITestOutputHelper _output;
-
-    public ServiceTest(ITestOutputHelper output, 
-        DataContext context,
-        IPersonService personService)
+    private readonly WebApplicationFactory<Program> _factory;
+    
+    public ServiceTest(ITestOutputHelper output,
+        WebApplicationFactory<Program> factory)
     {
         this._output = output;
-        this._personService = personService;
-        context.Database.EnsureCreated();
+        this._factory = factory;
+        this._output.WriteLine("Running tests in " + Directory.GetCurrentDirectory());
     }
 
     [Fact]
     public void DatabaseShouldExist()
     {
+        var client = _factory.CreateClient();
         File.Exists("aspnetcoreapi.db").Should().BeTrue();
     }
 
     [Fact]
-    public void ListPersonsTest()
+    public async Task ListPersonsTest()
     {
+        // Arrange
+        using var scope = _factory.Services.CreateScope();
+        var scopedServices = scope.ServiceProvider;
+        var personService = scopedServices.GetRequiredService<IPersonService>();
         this._output.WriteLine("List Persons...");
-        this._personService.Should().NotBeNull();
-        long size = this._personService.Size();
+        personService.Should().NotBeNull();
+        var size = await personService.Size();
         this._output.WriteLine("There are {0} persons", size);
-        List<Person> persons = this._personService.GetAll();
+        var persons = await personService.GetAll();
         persons.Should().NotBeNull();
         persons.Count.Should().Be(unchecked((int)size));
     }

@@ -27,25 +27,26 @@ public class PersonController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Person>> Get()
+    public async Task<ActionResult<IEnumerable<Person>>> Get()
     {
         _logger.LogInformation("GET api/person");
-        List<Person> result = this._personService.GetAll();
+        var result = await this._personService.GetAll();
         return Ok(result);
     }
         
     [HttpGet("count")]
-    public ActionResult<long> Size()
+    public async Task<ActionResult<int>> Size()
     {
         _logger.LogInformation("api/count");
-        return Ok(this._personService.Size());
+        var persons = await this._personService.Size();
+        return Ok(persons);
     }
 
     [HttpGet("{id:int}")]
-    public ActionResult<Person> GetBySerial(int id)
+    public async Task<ActionResult<Person>> GetBySerial(int id)
     {
         _logger.LogInformation("GET api/person/{Id}", id);
-        var person =  this._personService.GetPerson(id);
+        var person =  await this._personService.GetPerson(id);
         if (person == null)
         {
             return NotFound();
@@ -54,20 +55,34 @@ public class PersonController : ControllerBase
     }
 
     [HttpDelete("{id:int}")]
-    public ActionResult DeleteById(int id)
+    public async Task<IActionResult> DeleteById(int id)
     {
         _logger.LogInformation("DELETE api/persona/{Id}", id);
-        this._personService.DeletePerson(id);
-        return Ok();
+        await this._personService.DeletePerson(id);
+        return NoContent();
     }
 
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
-    public ActionResult<Person> Create([FromBody] Person person)
+    public async Task<ActionResult<Person>> Create([FromBody] Person person)
     {
         _logger.LogInformation("POST api/person");
-        Person createdPerson = this._personService.AddPerson(person);
+        var createdPerson = await this._personService.AddPerson(person);
         return this.CreatedAtAction(
-            nameof(this.Get), new { id = createdPerson.PersonId }, createdPerson);
+            nameof(this.Get), new
+            {
+                id = createdPerson.PersonId
+            }, createdPerson);
+    }
+    
+    [HttpPut("{id:int}")]
+    public async Task<IActionResult> Edit(int id, Person person)
+    {
+        if (id != person.PersonId)
+        {
+            return BadRequest();
+        }
+        var modifiedPerson = await this._personService.EditPerson(person);
+        return Ok(modifiedPerson);
     }
 }
