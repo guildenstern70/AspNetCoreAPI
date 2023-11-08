@@ -26,6 +26,10 @@ public class PersonController : ControllerBase
         this._personService = personService;
     }
 
+    /// <summary>
+    /// Get all persons
+    /// </summary>
+    /// <returns>A JSON list of persons</returns>
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Person>>> Get()
     {
@@ -33,7 +37,11 @@ public class PersonController : ControllerBase
         var result = await this._personService.GetAll();
         return Ok(result);
     }
-        
+     
+    /// <summary>
+    /// Get number of persons
+    /// </summary>
+    /// <returns>The number of persons in the database</returns>
     [HttpGet("count")]
     public async Task<ActionResult<int>> Size()
     {
@@ -42,6 +50,11 @@ public class PersonController : ControllerBase
         return Ok(persons);
     }
 
+    /// <summary>
+    /// Get person by ID
+    /// </summary>
+    /// <param name="id">Person ID</param>
+    /// <returns>A JSON representation of the person</returns>
     [HttpGet("{id:int}")]
     public async Task<ActionResult<Person>> GetBySerial(int id)
     {
@@ -54,6 +67,10 @@ public class PersonController : ControllerBase
         return Ok(person);
     }
 
+    /// <summary>
+    /// Delete a person by ID
+    /// </summary>
+    /// <param name="id">Person ID</param>
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> DeleteById(int id)
     {
@@ -62,6 +79,11 @@ public class PersonController : ControllerBase
         return NoContent();
     }
 
+    /// <summary>
+    /// Create a new person
+    /// </summary>
+    /// <param name="person">See Person object model</param>
+    /// <returns>The newly created person as a JSON document</returns>
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     public async Task<ActionResult<Person>> Create([FromBody] Person person)
@@ -75,6 +97,12 @@ public class PersonController : ControllerBase
             }, createdPerson);
     }
     
+    /// <summary>
+    /// Modify person
+    /// </summary>
+    /// <param name="id">Person ID</param>
+    /// <param name="person">A JSON document containing all of the person attributes. See Person object model</param>
+    /// <returns>The modified person JSON document</returns>
     [HttpPut("{id:int}")]
     public async Task<IActionResult> Edit(int id, Person person)
     {
