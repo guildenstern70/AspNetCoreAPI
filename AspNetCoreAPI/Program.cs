@@ -28,29 +28,23 @@ builder.Services.AddScoped<IPersonService, PersonService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
+    var siteDocUrl = new Uri("https://github.com/guildenstern70/AspNetCoreAPI");
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
         Title = "AspNetCore API",
         Description = "AspNet Core REST API Documentation",
-        TermsOfService = new Uri("https://github.com/guildenstern70/AspNetCoreAPI"),
+        TermsOfService = siteDocUrl,
         Contact = new OpenApiContact
         {
             Name = "Contact",
-            Url = new Uri("https://github.com/guildenstern70/AspNetCoreAPI")
+            Url = siteDocUrl
         },
         License = new OpenApiLicense
         {
             Name = "License",
-            Url = new Uri("https://github.com/guildenstern70/AspNetCoreAPI")
+            Url = siteDocUrl
         }
-    });
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        In = ParameterLocation.Header,
-        Description = "Please insert JWT with Bearer into field",
-        Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey
     });
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
@@ -93,5 +87,7 @@ app.MapFallbackToPage("/_Host");
 
 app.Run();
 
+// The following partial class is needed by tests to get Dependency Injection access
+// ReSharper disable once ClassNeverInstantiated.Global
 public partial class Program { }
 
