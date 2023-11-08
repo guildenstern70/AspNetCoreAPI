@@ -32,7 +32,6 @@ public class ServiceTest: IClassFixture<WebApplicationFactory<Program>>
     [Fact]
     public void DatabaseShouldExist()
     {
-        var client = _factory.CreateClient();
         File.Exists("aspnetcoreapi.db").Should().BeTrue();
     }
 
