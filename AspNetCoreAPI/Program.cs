@@ -1,10 +1,12 @@
 ﻿/*
- * 
+ *
  * AspNetCore API Template
  * Copyright (C) 2020-23 Alessio Saltarin
  * MIT License - see LICENSE file
- * 
+ *
  */
+
+using AspNetCoreApi;
 
 using System.Reflection;
 using AspNetCoreApi.Models;
@@ -16,7 +18,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Home Page
 builder.Services.AddRazorPages();
-builder.Services.AddServerSideBlazor();
+builder.Services.AddRazorComponents()
+    .AddInteractiveServerComponents();
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -78,12 +81,14 @@ app.UseSwaggerUI(c =>
 });
 app.UseStaticFiles();
 app.UseRouting();
+app.UseAntiforgery();
 
 // Endpoints
 app.MapControllers();
-app.MapBlazorHub();
+app.MapRazorPages();
+app.MapRazorComponents<App>()
+    .AddInteractiveServerRenderMode();
 app.MapHealthChecks("/health");
-app.MapFallbackToPage("/_Host");
 
 app.Run();
 

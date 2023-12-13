@@ -1,28 +1,8 @@
 /*
- * Project eMov Identity
+ * Project AspNetCore API
  * Copyright (C) 2022-23 IBM Consulting
  *  This software is copyrighted. All rights reserved.
  */
-
-html, body {
-    font-family: 'Nunito', sans-serif;
-}
-
-.content {
-    padding-top: 1.1rem;
-}
-
-.valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
-}
-
-.invalid {
-    outline: 1px solid red;
-}
-
-.validation-message {
-    color: red;
-}
 
 #blazor-error-ui {
     background: lightyellow;
