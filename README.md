@@ -9,11 +9,11 @@ A basic Asp.NET Core v9 OpenAPI template. It uses an embedded SQLite database fo
 
 Build
 
-    docker build --platform linux/amd64 -t aspnetcoreapi:1.0 .
+    docker build -t aspnetcoreapi:1.0 .
 
 Run
 
-    docker run -p 5000:5000 aspnetcoreapi:1.0
+    docker run -p 3000:3000 aspnetcoreapi:1.0
 
 ### Entity Framework Core setup
 
