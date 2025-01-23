@@ -1,0 +1,28 @@
+﻿@page "/"
+
+<PageTitle>ASP NET Core 9 API</PageTitle>
+
+@code
+{
+    private static string Version => typeof(Program).Assembly.GetName().Version?.ToString() ?? "0.0.0";
+    private static string SdkVersion => System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription;
+}
+
+<section class="section">
+    <div class="container">
+        <h1 class="title">
+            ASP NET Core 9 API
+        </h1>
+        <p class="subtitle">
+            A basic Asp.NET Core v9 OpenAPI template. It uses an embedded SQLite database for data persistence.
+        </p>
+        <p>&nbsp;</p>
+        <a href="/openapi" class="button is-primary">Documentation</a>
+        <a href="/healthz" target="_blank" class="button is-link is-light">Health</a>
+        <div class="mt-2">
+            <small class="is-size-7">AspNetCore API <span class="text-primary"> v.@Version</span></small>
+            <small class="is-size-7">Platform <span class="text-primary">@SdkVersion</span></small>
+        </div>
+    </div>
+</section>
+

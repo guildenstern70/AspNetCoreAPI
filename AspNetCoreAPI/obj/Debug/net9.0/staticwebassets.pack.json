@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
+      "PackagePath": "staticwebassets/AspNetCoreAPI.ym45k9nxej.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.AspNetCoreAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.AspNetCoreAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.AspNetCoreAPI.props",
+      "PackagePath": "build\\AspNetCoreAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.AspNetCoreAPI.props",
+      "PackagePath": "buildMultiTargeting\\AspNetCoreAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.AspNetCoreAPI.props",
+      "PackagePath": "buildTransitive\\AspNetCoreAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

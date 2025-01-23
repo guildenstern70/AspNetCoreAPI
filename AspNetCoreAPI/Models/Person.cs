@@ -1,12 +1,12 @@
 /*
- * 
+ *
  * AspNetCore API Template
- * Copyright (C) 2020-23 Alessio Saltarin
+ * Copyright (C) 2020-25 Alessio Saltarin
  * MIT License - see LICENSE file
- * 
+ *
  */
 
-namespace AspNetCoreApi.Models;
+namespace AspNetCoreAPI.Models;
 
 public class Person
 {
@@ -16,5 +16,3 @@ public class Person
     public int Age { get; init; }
     public string? SerialNumber { get; init; }
 }
-
-

@@ -1,98 +1,66 @@
-﻿/*
+/*
  *
  * AspNetCore API Template
- * Copyright (C) 2020-23 Alessio Saltarin
+ * Copyright (C) 2020-25 Alessio Saltarin
  * MIT License - see LICENSE file
  *
  */
 
-using AspNetCoreApi;
-
-using System.Reflection;
-using AspNetCoreApi.Models;
-using AspNetCoreApi.Services;
+using System.Text.Json.Serialization;
+using AspNetCoreAPI;
+using AspNetCoreAPI.Components;
+using AspNetCoreAPI.Models;
+using AspNetCoreAPI.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Home Page
-builder.Services.AddRazorPages();
+// Razor services 
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 // Add services to the container.
-builder.Services.AddControllers();
-
-// Custom services
 builder.Services.AddScoped<IPersonService, PersonService>();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options =>
-{
-    var siteDocUrl = new Uri("https://github.com/guildenstern70/AspNetCoreAPI");
-    options.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Version = "v1",
-        Title = "AspNetCore API",
-        Description = "AspNet Core REST API Documentation",
-        TermsOfService = siteDocUrl,
-        Contact = new OpenApiContact
-        {
-            Name = "Contact",
-            Url = siteDocUrl
-        },
-        License = new OpenApiLicense
-        {
-            Name = "License",
-            Url = siteDocUrl
-        }
-    });
-    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
-});
+// Add controllers
+builder.Services.AddControllers();
 
-// Health check
-builder.Services.AddHealthChecks();
-
-// Logging
-builder.Logging.ClearProviders();
-builder.Logging.AddSimpleConsole(options =>
-{
-    options.IncludeScopes = true;
-    options.SingleLine = false;
-    options.TimestampFormat = "HH:mm:ss.ffff ";
-});
+// OpenAPI Service
+builder.Services.AddOpenApi();
 
 // Routing must be lowercase
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
-// Entity Framework Dependency Injection
+// Health checks
+builder.Services.AddHealthChecks();
+
+// Entity Framework
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlite("Data Source=aspnetcoreapi.db"));
 
 var app = builder.Build();
 
-app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.InjectStylesheet("/css/swaggerui/theme-flattop.css");
-});
-app.UseStaticFiles();
-app.UseRouting();
+// Anti-forgery
 app.UseAntiforgery();
 
-// Endpoints
+// NSwag UI
+app.UseSwaggerUi(options =>
+{
+    options.DocumentTitle = "AspNet Core 9 API";
+    options.Path = "/openapi";
+    options.DocumentPath = "/openapi/v1.json";
+});
+
+// Routing and endpoints
+app.MapOpenApi();
+app.MapStaticAssets();
 app.MapControllers();
-app.MapRazorPages();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
-app.MapHealthChecks("/health");
+app.MapHealthChecks("/healthz");
 
 app.Run();
 
-// The following partial class is needed by tests to get Dependency Injection access
-// ReSharper disable once ClassNeverInstantiated.Global
+// The following is needed to make the app work with Unit Tests project AspNetCoreAPI.Tests
 public partial class Program { }
 

@@ -1,9 +1,9 @@
-## ASP.NET Core v8 OpenAPI Template
+## ASP.NET Core v9 OpenAPI Template
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/70514795979e4b64b959068a250bf995)](https://www.codacy.com/gh/guildenstern70/AspNetCoreAPI/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=guildenstern70/AspNetCoreAPI&amp;utm_campaign=Badge_Grade)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A basic Asp.NET Core v8 OpenAPI template. It uses an embedded SQLite database for data persistence.
+A basic Asp.NET Core v9 OpenAPI template. It uses an embedded SQLite database for data persistence.
 
 ### Build Docker image
 
@@ -37,6 +37,6 @@ If you need to update the Entity Framework core:
 
     dotnet test
 
-Please note that the tests rely on a different database which contains only test data. 
+Please note that the tests rely on a different database which contains only test data.
 The database is for tests is found in the AspNetCoreApi.Test project directory.
 To re-create the test database, simply re-run DB migrations and copy DB file ('aspnetcoreapi.db') to the test project directory.

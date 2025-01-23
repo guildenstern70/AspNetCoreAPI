@@ -1,17 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1704.3
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreApi", "AspNetCoreApi\AspNetCoreApi.csproj", "{8EAEE418-850D-4064-8893-13D32B78822B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAPI", "AspNetCoreAPI\AspNetCoreAPI.csproj", "{EAFB3CED-577C-496B-B7E6-FAC5F760B15C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreApi.Test", "AspNetCoreApi.Test\AspNetCoreApi.Test.csproj", "{F573868F-FD7C-4B98-A73D-831E64F153A2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C5B053AD-46F0-4774-82D4-883330BA99C1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{F20A8111-D3F6-4588-8FAE-F3FD00EA2CE9}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 		LICENSE = LICENSE
+		Dockerfile = Dockerfile
+		global.json = global.json
+		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAPI.Test", "AspNetCoreAPI.Test\AspNetCoreAPI.Test.csproj", "{4953D9D4-2417-4667-8BCA-54D55D22F91F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,19 +22,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8EAEE418-850D-4064-8893-13D32B78822B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EAEE418-850D-4064-8893-13D32B78822B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EAEE418-850D-4064-8893-13D32B78822B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EAEE418-850D-4064-8893-13D32B78822B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F573868F-FD7C-4B98-A73D-831E64F153A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F573868F-FD7C-4B98-A73D-831E64F153A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F573868F-FD7C-4B98-A73D-831E64F153A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F573868F-FD7C-4B98-A73D-831E64F153A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFB3CED-577C-496B-B7E6-FAC5F760B15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFB3CED-577C-496B-B7E6-FAC5F760B15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFB3CED-577C-496B-B7E6-FAC5F760B15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFB3CED-577C-496B-B7E6-FAC5F760B15C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4953D9D4-2417-4667-8BCA-54D55D22F91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4953D9D4-2417-4667-8BCA-54D55D22F91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4953D9D4-2417-4667-8BCA-54D55D22F91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4953D9D4-2417-4667-8BCA-54D55D22F91F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A178D16E-E9EF-4951-B687-4D594EE7913E}
 	EndGlobalSection
 EndGlobal
