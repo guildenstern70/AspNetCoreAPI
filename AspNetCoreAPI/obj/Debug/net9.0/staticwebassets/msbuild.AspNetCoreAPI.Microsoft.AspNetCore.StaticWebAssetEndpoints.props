@@ -13,16 +13,16 @@
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2841"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PNvEyASL960qpWmVJ5Purzbr0F4hodQnu\u002Bu/XkKHuE0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 23 Jan 2025 10:34:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AspNetCoreAPI/AspNetCoreAPI.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AspNetCoreAPI.ym45k9nxej.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AspNetCoreAPI.nypculfc9u.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy\u002BXQw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2149"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy\u002BXQw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 23 Jan 2025 10:35:57 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ka\u002BICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"543"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ka\u002BICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 23 Jan 2025 13:53:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/AspNetCoreAPI/AspNetCoreAPI.ym45k9nxej.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AspNetCoreAPI.ym45k9nxej.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/AspNetCoreAPI/AspNetCoreAPI.nypculfc9u.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AspNetCoreAPI.nypculfc9u.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ym45k9nxej"},{"Name":"integrity","Value":"sha256-uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy\u002BXQw="},{"Name":"label","Value":"_content/AspNetCoreAPI/AspNetCoreAPI.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2149"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy\u002BXQw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 23 Jan 2025 10:35:57 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nypculfc9u"},{"Name":"integrity","Value":"sha256-ka\u002BICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ="},{"Name":"label","Value":"_content/AspNetCoreAPI/AspNetCoreAPI.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"543"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ka\u002BICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 23 Jan 2025 13:53:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AspNetCoreAPI/favicon.ifv42okdf2.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</AssetFile>

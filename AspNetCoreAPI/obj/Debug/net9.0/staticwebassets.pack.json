@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
-      "PackagePath": "staticwebassets/AspNetCoreAPI.ym45k9nxej.bundle.scp.css"
+      "Id": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
+      "PackagePath": "staticwebassets/AspNetCoreAPI.nypculfc9u.bundle.scp.css"
     },
     {
-      "Id": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/app.css",
+      "Id": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/favicon.png",
+      "Id": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },
     {

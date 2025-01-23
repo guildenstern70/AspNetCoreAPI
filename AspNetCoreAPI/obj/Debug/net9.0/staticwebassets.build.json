@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h+f4ixfm91xkb7huoEbukOhqgRw7Cax9cAk8IgprksQ=",
+  "Hash": "xasjBJowa+289Q0wj2yDnwqigt/JzpoXv+nB1FWuvOk=",
   "Source": "AspNetCoreAPI",
   "BasePath": "_content/AspNetCoreAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AspNetCoreAPI/wwwroot",
       "Source": "AspNetCoreAPI",
-      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/",
+      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/",
       "BasePath": "_content/AspNetCoreAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/lannh8lbct-w7mf952350.gz",
+      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/lannh8lbct-w7mf952350.gz",
       "SourceId": "AspNetCoreAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/AspNetCoreAPI",
       "RelativePath": "app#[.{fingerprint=w7mf952350}]?.css.gz",
       "AssetKind": "All",
@@ -28,62 +28,62 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/app.css",
+      "RelatedAsset": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "ohxqq2xv9x",
       "Integrity": "DJ7KEILvHL5aC7rQl0LK44Ba3YizMJbQnbVUsn6Uw0s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/app.css"
+      "OriginalItemSpec": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/app.css"
     },
     {
-      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/mswvopszyd-ym45k9nxej.gz",
+      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/mswvopszyd-nypculfc9u.gz",
       "SourceId": "AspNetCoreAPI",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/AspNetCoreAPI",
-      "RelativePath": "AspNetCoreAPI#[.{fingerprint=ym45k9nxej}]?.styles.css.gz",
+      "RelativePath": "AspNetCoreAPI#[.{fingerprint=nypculfc9u}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css",
+      "RelatedAsset": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3hwjtth9gm",
-      "Integrity": "J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4=",
+      "Fingerprint": "7quc3r2fq7",
+      "Integrity": "ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css"
+      "OriginalItemSpec": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css"
     },
     {
-      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/n155ou96jd-ym45k9nxej.gz",
+      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/n155ou96jd-nypculfc9u.gz",
       "SourceId": "AspNetCoreAPI",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/AspNetCoreAPI",
-      "RelativePath": "AspNetCoreAPI#[.{fingerprint=ym45k9nxej}]!.bundle.scp.css.gz",
+      "RelativePath": "AspNetCoreAPI#[.{fingerprint=nypculfc9u}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
+      "RelatedAsset": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3hwjtth9gm",
-      "Integrity": "J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4=",
+      "Fingerprint": "7quc3r2fq7",
+      "Integrity": "ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css"
+      "OriginalItemSpec": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css"
     },
     {
-      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css",
+      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css",
       "SourceId": "AspNetCoreAPI",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/",
       "BasePath": "_content/AspNetCoreAPI",
       "RelativePath": "AspNetCoreAPI#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -94,17 +94,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "ym45k9nxej",
-      "Integrity": "uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw=",
+      "Fingerprint": "nypculfc9u",
+      "Integrity": "ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css"
+      "OriginalItemSpec": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css"
     },
     {
-      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
+      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
       "SourceId": "AspNetCoreAPI",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/",
       "BasePath": "_content/AspNetCoreAPI",
       "RelativePath": "AspNetCoreAPI#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -115,17 +115,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "ym45k9nxej",
-      "Integrity": "uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw=",
+      "Fingerprint": "nypculfc9u",
+      "Integrity": "ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css"
+      "OriginalItemSpec": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css"
     },
     {
-      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/app.css",
+      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/app.css",
       "SourceId": "AspNetCoreAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/",
+      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/",
       "BasePath": "_content/AspNetCoreAPI",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot/app.css"
     },
     {
-      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/favicon.png",
+      "Identity": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/favicon.png",
       "SourceId": "AspNetCoreAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/",
+      "ContentRoot": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/",
       "BasePath": "_content/AspNetCoreAPI",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -167,7 +167,7 @@
   "Endpoints": [
     {
       "Route": "app.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/lannh8lbct-w7mf952350.gz",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/lannh8lbct-w7mf952350.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -222,7 +222,7 @@
     },
     {
       "Route": "app.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/app.css",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -259,7 +259,7 @@
     },
     {
       "Route": "app.css.gz",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/lannh8lbct-w7mf952350.gz",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/lannh8lbct-w7mf952350.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -304,7 +304,7 @@
     },
     {
       "Route": "app.w7mf952350.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/lannh8lbct-w7mf952350.gz",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/lannh8lbct-w7mf952350.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -367,7 +367,7 @@
     },
     {
       "Route": "app.w7mf952350.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/app.css",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -412,7 +412,7 @@
     },
     {
       "Route": "app.w7mf952350.css.gz",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/lannh8lbct-w7mf952350.gz",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/lannh8lbct-w7mf952350.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -465,12 +465,12 @@
     },
     {
       "Route": "AspNetCoreAPI.bundle.scp.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/n155ou96jd-ym45k9nxej.gz",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/n155ou96jd-nypculfc9u.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001270648030"
+          "Quality": "0.003003003003"
         }
       ],
       "ResponseHeaders": [
@@ -480,15 +480,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "786"
+          "Value": "332"
         },
         {
           "Name": "ETag",
-          "Value": "\"J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4=\""
+          "Value": "\"ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -508,19 +508,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw=\""
+          "Value": "W/\"ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw="
+          "Value": "sha256-ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ="
         }
       ]
     },
     {
       "Route": "AspNetCoreAPI.bundle.scp.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -529,7 +529,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2149"
+          "Value": "543"
         },
         {
           "Name": "Content-Type",
@@ -537,11 +537,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw=\""
+          "Value": "\"ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -551,13 +551,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw="
+          "Value": "sha256-ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ="
         }
       ]
     },
     {
       "Route": "AspNetCoreAPI.bundle.scp.css.gz",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/n155ou96jd-ym45k9nxej.gz",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/n155ou96jd-nypculfc9u.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -566,7 +566,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "786"
+          "Value": "332"
         },
         {
           "Name": "Content-Type",
@@ -574,11 +574,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4=\""
+          "Value": "\"ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -596,18 +596,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4="
+          "Value": "sha256-ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM="
         }
       ]
     },
     {
-      "Route": "AspNetCoreAPI.styles.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/mswvopszyd-ym45k9nxej.gz",
+      "Route": "AspNetCoreAPI.nypculfc9u.bundle.scp.css",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/n155ou96jd-nypculfc9u.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001270648030"
+          "Quality": "0.003003003003"
         }
       ],
       "ResponseHeaders": [
@@ -617,152 +617,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "786"
+          "Value": "332"
         },
         {
           "Name": "ETag",
-          "Value": "\"J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4=\""
+          "Value": "\"ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw="
-        }
-      ]
-    },
-    {
-      "Route": "AspNetCoreAPI.styles.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2149"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw="
-        }
-      ]
-    },
-    {
-      "Route": "AspNetCoreAPI.styles.css.gz",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/mswvopszyd-ym45k9nxej.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "786"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4="
-        }
-      ]
-    },
-    {
-      "Route": "AspNetCoreAPI.ym45k9nxej.bundle.scp.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/n155ou96jd-ym45k9nxej.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001270648030"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "786"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -782,13 +645,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw=\""
+          "Value": "W/\"ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ym45k9nxej"
+          "Value": "nypculfc9u"
         },
         {
           "Name": "label",
@@ -796,13 +659,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw="
+          "Value": "sha256-ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ="
         }
       ]
     },
     {
-      "Route": "AspNetCoreAPI.ym45k9nxej.bundle.scp.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
+      "Route": "AspNetCoreAPI.nypculfc9u.bundle.scp.css",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/projectbundle/AspNetCoreAPI.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -811,7 +674,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2149"
+          "Value": "543"
         },
         {
           "Name": "Content-Type",
@@ -819,11 +682,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw=\""
+          "Value": "\"ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -833,7 +696,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ym45k9nxej"
+          "Value": "nypculfc9u"
         },
         {
           "Name": "label",
@@ -841,13 +704,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw="
+          "Value": "sha256-ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ="
         }
       ]
     },
     {
-      "Route": "AspNetCoreAPI.ym45k9nxej.bundle.scp.css.gz",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/n155ou96jd-ym45k9nxej.gz",
+      "Route": "AspNetCoreAPI.nypculfc9u.bundle.scp.css.gz",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/n155ou96jd-nypculfc9u.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -856,7 +719,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "786"
+          "Value": "332"
         },
         {
           "Name": "Content-Type",
@@ -864,11 +727,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4=\""
+          "Value": "\"ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -886,7 +749,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ym45k9nxej"
+          "Value": "nypculfc9u"
         },
         {
           "Name": "label",
@@ -894,18 +757,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4="
+          "Value": "sha256-ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM="
         }
       ]
     },
     {
-      "Route": "AspNetCoreAPI.ym45k9nxej.styles.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/mswvopszyd-ym45k9nxej.gz",
+      "Route": "AspNetCoreAPI.nypculfc9u.styles.css",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/mswvopszyd-nypculfc9u.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001270648030"
+          "Quality": "0.003003003003"
         }
       ],
       "ResponseHeaders": [
@@ -915,15 +778,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "786"
+          "Value": "332"
         },
         {
           "Name": "ETag",
-          "Value": "\"J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4=\""
+          "Value": "\"ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -943,13 +806,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw=\""
+          "Value": "W/\"ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ym45k9nxej"
+          "Value": "nypculfc9u"
         },
         {
           "Name": "label",
@@ -957,13 +820,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw="
+          "Value": "sha256-ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ="
         }
       ]
     },
     {
-      "Route": "AspNetCoreAPI.ym45k9nxej.styles.css",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css",
+      "Route": "AspNetCoreAPI.nypculfc9u.styles.css",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -972,7 +835,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2149"
+          "Value": "543"
         },
         {
           "Name": "Content-Type",
@@ -980,11 +843,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw=\""
+          "Value": "\"ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -994,7 +857,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ym45k9nxej"
+          "Value": "nypculfc9u"
         },
         {
           "Name": "label",
@@ -1002,13 +865,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uq4OyO13Fth4TAWY8wHRxP1dfnsWWyQCqLW7Ehy+XQw="
+          "Value": "sha256-ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ="
         }
       ]
     },
     {
-      "Route": "AspNetCoreAPI.ym45k9nxej.styles.css.gz",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/obj/Debug/net9.0/compressed/mswvopszyd-ym45k9nxej.gz",
+      "Route": "AspNetCoreAPI.nypculfc9u.styles.css.gz",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/mswvopszyd-nypculfc9u.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1017,7 +880,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "786"
+          "Value": "332"
         },
         {
           "Name": "Content-Type",
@@ -1025,11 +888,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4=\""
+          "Value": "\"ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 10:35:57 GMT"
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1047,7 +910,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ym45k9nxej"
+          "Value": "nypculfc9u"
         },
         {
           "Name": "label",
@@ -1055,13 +918,150 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-J0zCobgaDLFGizte2GcmkJdJ0KlAF2oJ5J3UH+4c1H4="
+          "Value": "sha256-ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM="
+        }
+      ]
+    },
+    {
+      "Route": "AspNetCoreAPI.styles.css",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/mswvopszyd-nypculfc9u.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003003003003"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ="
+        }
+      ]
+    },
+    {
+      "Route": "AspNetCoreAPI.styles.css",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/scopedcss/bundle/AspNetCoreAPI.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ka+ICZJaLOeFMOd0emqeOMn7e2LJwyEOp80zpEmLffQ="
+        }
+      ]
+    },
+    {
+      "Route": "AspNetCoreAPI.styles.css.gz",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/obj/Debug/net9.0/compressed/mswvopszyd-nypculfc9u.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 13:53:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ccqASDNqXV++J8uqkqHXePJ5ZGibJp+iSKwQ6klDSvM="
         }
       ]
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/favicon.png",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1106,7 +1106,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCore9/AspNetCoreAPI/wwwroot/favicon.png",
+      "AssetFile": "/Users/alessio/Documents/Codice/C#/AspNetCoreAPI/AspNetCoreAPI/wwwroot/favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
