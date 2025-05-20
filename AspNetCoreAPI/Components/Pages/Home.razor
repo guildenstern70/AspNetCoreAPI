@@ -1,11 +1,12 @@
 ﻿@page "/"
+@using System.Runtime.InteropServices
 
 <PageTitle>ASP NET Core 9 API</PageTitle>
 
 @code
 {
     private static string Version => typeof(Program).Assembly.GetName().Version?.ToString() ?? "0.0.0";
-    private static string SdkVersion => System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription;
+    private static string SdkVersion => RuntimeInformation.FrameworkDescription;
 }
 
 <section class="section">

@@ -6,10 +6,10 @@
  *
  */
 
-namespace AspNetCoreAPI.Services;
-
-using Models;
+using AspNetCoreAPI.Models;
 using Microsoft.EntityFrameworkCore;
+
+namespace AspNetCoreAPI.Services;
 
 public class PersonService(
     ILogger<PersonService> logger,

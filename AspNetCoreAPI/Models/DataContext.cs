@@ -6,9 +6,9 @@
  *
  */
 
-namespace AspNetCoreAPI.Models;
-
 using Microsoft.EntityFrameworkCore;
+
+namespace AspNetCoreAPI.Models;
 
 public class DataContext(DbContextOptions<DataContext> options) : DbContext(options)
 {

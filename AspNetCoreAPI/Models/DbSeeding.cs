@@ -6,9 +6,9 @@
  *
  */
 
-namespace AspNetCoreAPI.Models;
-
 using Microsoft.EntityFrameworkCore;
+
+namespace AspNetCoreAPI.Models;
 
 public class DbSeeding(ModelBuilder mb)
 {
