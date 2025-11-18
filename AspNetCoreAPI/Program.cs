@@ -44,7 +44,7 @@ app.UseAntiforgery();
 // NSwag UI
 app.UseSwaggerUi(options =>
 {
-    options.DocumentTitle = "AspNet Core 9 API";
+    options.DocumentTitle = "AspNet Core 10 API";
     options.Path = "/openapi";
     options.DocumentPath = "/openapi/v1.json";
 });
