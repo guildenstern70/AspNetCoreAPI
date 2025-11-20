@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /app
 
 # copy csproj and restore as distinct layers
@@ -10,12 +10,13 @@ RUN dotnet restore
 # copy everything else and build app
 COPY AspNetCoreAPI/. ./AspNetCoreAPI/
 WORKDIR /app/AspNetCoreAPI
-RUN dotnet publish -c release -o out
+RUN dotnet publish -c Release -o out --no-restore
 
-FROM  mcr.microsoft.com/dotnet/sdk:9.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/AspNetCoreAPI/out ./
 ENV ASPNETCORE_URLS="http://0.0.0.0:3000"
+EXPOSE 3000
 
 ENTRYPOINT ["dotnet", "AspNetCoreAPI.dll"]
 
