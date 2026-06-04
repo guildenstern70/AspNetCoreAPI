@@ -21,6 +21,7 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+**/BuildHost*/
 x64/
 x86/
 [Ww][Ii][Nn]32/
@@ -404,4 +405,3 @@ FodyWeavers.xsd
 aspnetcoreapi.db
 aspnetcoreapi.db-shm
 aspnetcoreapi.db-wal
-
