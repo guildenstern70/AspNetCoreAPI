@@ -5,7 +5,33 @@
 
 A basic Asp.NET Core v10 OpenAPI template. It uses an embedded SQLite database for data persistence.
 
-### Build Docker image
+
+## Setup
+
+First, you need to create the database. Follow the instructions in the Entity Framework Core setup section below to install the necessary tools and packages. 
+
+Then, run the database migrations to create the SQLite database.
+
+    cd AspNetCoreAPI
+    dotnet ef database update
+
+This creates `AspNetCoreAPI/aspnetcoreapi.db`. If you need the test database too, copy it to the test project:
+
+    cp aspnetcoreapi.db ../AspNetCoreAPI.Test/aspnetcoreapi.db
+
+
+## Build and Run
+
+To build the application run
+
+    dotnet build
+
+To run the application run
+
+    dotnet run
+
+
+### Build & Run within a container
 
 Build
 
@@ -27,21 +53,9 @@ If you need to update the Entity Framework core:
 
     dotnet tool update --global dotnet-ef
 
-### DB Migrations
-
-The SQLite database is created from the Entity Framework migrations.
-
-    cd AspNetCoreAPI
-    dotnet ef database update
-
-This creates `AspNetCoreAPI/aspnetcoreapi.db`. If you need the test database too, copy it to the test project:
-
-    cp aspnetcoreapi.db ../AspNetCoreAPI.Test/aspnetcoreapi.db
-
 ### Unit Tests
 
     dotnet test
 
 Please note that the tests rely on a different database which contains only test data.
-The database for tests is found in the AspNetCoreApi.Test project directory.
-To re-create the test database, simply re-run DB migrations and copy DB file ('aspnetcoreapi.db') to the test project directory.
+The database for tests should be found in the AspNetCoreApi.Test project directory.
