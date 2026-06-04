@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{F2
 		global.json = global.json
 		.gitignore = .gitignore
 		AGENTS.md = AGENTS.md
+		Screenshot.png = Screenshot.png
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAPI.Test", "AspNetCoreAPI.Test\AspNetCoreAPI.Test.csproj", "{4953D9D4-2417-4667-8BCA-54D55D22F91F}"

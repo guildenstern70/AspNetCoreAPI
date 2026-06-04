@@ -5,6 +5,8 @@
 
 A basic Asp.NET Core v10 OpenAPI template. It uses an embedded SQLite database for data persistence.
 
+<img src="Screenshot.png" alt="Screenshot of the API in action" width="800"/>
+
 
 ## Setup
 
