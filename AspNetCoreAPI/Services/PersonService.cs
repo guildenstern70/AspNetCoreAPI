@@ -32,14 +32,14 @@ public class PersonService(
     public async Task<Person?> EditPerson(Person p)
     {
         logger.LogInformation("Modifying existing person to DB");
-        dbContext.Entry(p).State = EntityState.Modified;
-
         var person = await dbContext.Persons.FindAsync(p.PersonId);
         if (person == null)
         {
-            logger.LogError("Cannot find person with ID = " + p.PersonId);
+            logger.LogError("Cannot find person with ID = {PersonId}", p.PersonId);
             return null;
         }
+
+        dbContext.Entry(person).CurrentValues.SetValues(p);
 
         try
         {
@@ -51,13 +51,13 @@ public class PersonService(
             return null;
         }
 
-        return p;
+        return person;
     }
 
     public async Task DeletePerson(int id)
     {
         logger.LogInformation("Deleting person from DB");
-        var person = dbContext.Persons.Find(id);
+        var person = await dbContext.Persons.FindAsync(id);
         if (person != null)
         {
             dbContext.Remove(person);

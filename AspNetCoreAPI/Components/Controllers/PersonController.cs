@@ -85,7 +85,7 @@ public class PersonController(
         logger.LogInformation("POST api/person");
         var createdPerson = await personService.AddPerson(person);
         return this.CreatedAtAction(
-            nameof(this.Get), new
+            nameof(this.GetBySerial), new
             {
                 id = createdPerson.PersonId
             }, createdPerson);
