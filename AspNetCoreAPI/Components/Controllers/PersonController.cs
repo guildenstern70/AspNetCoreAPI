@@ -68,7 +68,7 @@ public class PersonController(
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> DeleteById(int id)
     {
-        logger.LogInformation("DELETE api/persona/{Id}", id);
+        logger.LogInformation("DELETE api/person/{Id}", id);
         await personService.DeletePerson(id);
         return NoContent();
     }
