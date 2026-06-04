@@ -1,29 +1,128 @@
-﻿@page "/"
+@page "/"
 @using System.Runtime.InteropServices
+@using System.Reflection
 
-<PageTitle>ASP NET Core 10 API</PageTitle>
+<PageTitle>ASP.NET Core 10 REST API Template</PageTitle>
 
 @code
 {
-    private static string Version => typeof(Program).Assembly.GetName().Version?.ToString() ?? "0.0.0";
+    private static string Version => "1.4.0";
     private static string SdkVersion => RuntimeInformation.FrameworkDescription;
 }
 
-<section class="section">
-    <div class="container">
-        <h1 class="title">
-            ASP NET Core 10 API
-        </h1>
-        <p class="subtitle">
-            A basic Asp.NET Core 10 OpenAPI template. It uses an embedded SQLite database for data persistence.
-        </p>
-        <p>&nbsp;</p>
-        <a href="/openapi" class="button is-primary">Documentation</a>
-        <a href="/healthz" target="_blank" class="button is-link is-light">Health</a>
-        <div class="mt-2">
-            <small class="is-size-7">AspNetCore API <span class="text-primary"> v.@Version</span></small>
-            <small class="is-size-7">Platform <span class="text-primary">@SdkVersion</span></small>
+<div class="hero-glow-container">
+    <div class="container hero-content-wrapper px-5 py-6">
+        <div class="columns is-vcentered is-desktop">
+            <!-- Left Column: Content and CTAs -->
+            <div class="column is-7 pr-desktop-6">
+                <span class="pill-badge">
+                    <svg class="mr-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    v10.0 OpenAPI Template
+                </span>
+                
+                <h1 class="title is-1 has-text-white mb-4">
+                    Modern <span class="gradient-title">ASP.NET Core 10</span><br>
+                    REST API Template
+                </h1>
+                
+                <p class="subtitle is-5 has-text-grey-light mb-6">
+                    A professional, pre-configured starting point for building high-performance, containerized RESTful services in C# 14 and .NET 10. Equipped with OpenAPI auto-generation, Entity Framework Core, and embedded SQLite.
+                </p>
+                
+                <!-- Action Buttons -->
+                <div class="buttons is-left mt-5">
+                    <!-- Swagger Docs Button -->
+                    <a href="/openapi" class="custom-button custom-button-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <path d="M8 13h8"></path>
+                            <path d="M8 17h8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        OpenAPI Docs
+                    </a>
+                    
+                    <!-- Health Check Button -->
+                    <a href="/healthz" target="_blank" class="custom-button custom-button-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                        API Health Check
+                    </a>
+                    
+                    <!-- Download OpenAPI JSON Button -->
+                    <a href="/openapi/v1.json" download="openapi.json" class="custom-button custom-button-download">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        OpenAPI Spec JSON
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Glassmorphic Tech Stack Info -->
+            <div class="column is-5">
+                <div class="glass-card p-6">
+                    <h3 class="title is-4 has-text-white mb-5">
+                        Technical Highlights
+                    </h3>
+                    
+                    <div class="field mb-4" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <span class="tech-tag">.NET 10.0</span>
+                        <span class="tech-tag">C# 14</span>
+                        <span class="tech-tag">EF Core 10</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">NSwag OpenAPI</span>
+                        <span class="tech-tag">Bulma CSS</span>
+                    </div>
+                    
+                    <div class="is-divider my-4" style="border-top: 1px solid rgba(255,255,255,0.08); margin: 1.5rem 0;"></div>
+                    
+                    <ul class="has-text-grey-light is-size-6 mb-5" style="list-style: none; padding-left: 0; margin: 0;">
+                        <li class="mb-3 is-flex is-align-items-center">
+                            <svg class="has-text-success mr-3" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Pre-configured endpoints & controllers
+                        </li>
+                        <li class="mb-3 is-flex is-align-items-center">
+                            <svg class="has-text-success mr-3" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            SQLite database & migration workflow
+                        </li>
+                        <li class="mb-3 is-flex is-align-items-center">
+                            <svg class="has-text-success mr-3" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Unit testing scaffold with xUnit
+                        </li>
+                        <li class="is-flex is-align-items-center">
+                            <svg class="has-text-success mr-3" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Dockerized configuration
+                        </li>
+                    </ul>
+                    
+                    <div class="meta-footer">
+                        <div class="meta-item">
+                            Template Version: <strong>v@(Version)</strong>
+                        </div>
+                        <div class="meta-item">
+                            Runtime: <strong class="is-size-7">@SdkVersion</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</section>
+</div>
 
