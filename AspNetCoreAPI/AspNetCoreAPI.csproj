@@ -26,11 +26,5 @@
     <Folder Include="Migrations\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="aspnetcoreapi.db" />
-    <Content Include="aspnetcoreapi.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 
 </Project>

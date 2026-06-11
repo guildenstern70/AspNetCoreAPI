@@ -30,6 +30,7 @@ To build the application run
 
 To run the application run
 
+    cd AspNetCoreAPI
     dotnet run
 
 
