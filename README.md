@@ -5,7 +5,7 @@
 
 A basic Asp.NET Core v10 OpenAPI template. It uses an embedded SQLite database for data persistence.
 
-<img src="Screenshot.png" alt="Screenshot of the API in action" width="800"/>
+<img src="./Screenshot.png" alt="Screenshot of the API in action" width="800"/>
 
 
 ## Setup
@@ -34,15 +34,33 @@ To run the application run
     dotnet run
 
 
-### Build & Run within a container
+### Run with Docker
 
-Build
+You can build and run the application inside a Docker container using the provided `Dockerfile`.
 
-    docker build -t aspnetcoreapi:1.0 .
+1. **Build the Docker image** (from the repository root):
 
-Run
+   ```bash
+   docker build -t aspnetcoreapi:1.0 .
+   ```
 
-    docker run -p 3000:3000 aspnetcoreapi:1.0
+2. **Run the container**:
+
+   ```bash
+   docker run -d -p 3000:3000 --name aspnetcoreapi aspnetcoreapi:1.0
+   ```
+
+3. **Access the application**:
+   - Web / Blazor UI: [http://localhost:3000](http://localhost:3000)
+   - OpenAPI / Swagger UI: [http://localhost:3000/openapi](http://localhost:3000/openapi)
+   - Health check endpoint: [http://localhost:3000/healthz](http://localhost:3000/healthz)
+
+4. **Stop and remove the container**:
+
+   ```bash
+   docker stop aspnetcoreapi
+   docker rm aspnetcoreapi
+   ```
 
 ### Entity Framework Core setup
 
