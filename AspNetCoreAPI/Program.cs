@@ -1,7 +1,7 @@
 /*
  *
  * AspNetCore API Template
- * Copyright (C) 2020-25 Alessio Saltarin
+ * Copyright (C) 2020-26 Alessio Saltarin
  * MIT License - see LICENSE file
  *
  */
